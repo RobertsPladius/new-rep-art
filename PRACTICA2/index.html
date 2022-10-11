@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOLZTEAM</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="..\PRACTICA2\css\index.css">
+  <link rel="stylesheet" type="text/css" href="..\PRACTICA2\css\2dop.css">
+</head>
+<body>
+
+<div class="menutelefona">
+<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+<label class="btn-menu" for="hmt">
+  <span class="first"></span>
+  <span class="second"></span>
+  <span class="third"></span>
+</label>
+<ul class="hidden-menu">
+  <li><a href="">Link 1</a></li>  
+  <li><a href="">Link 2</a></li>
+  <li><a href="">Link 3</a></li>  
+</ul>
+</div>
+
+
+<header class="header">
+<div class="otstup">
+<div class="logo-headar">
+<img href="#" src="https://pngimg.com/uploads/lada/lada_PNG109.png"   id="logo-headar" >
+ </div>
+<div class="logo-text">
+ </div>
+<div class="menu">
+	<a href="#" class="underline-one">Домой</a>
+</div>
+<div class="menu">
+  <a href="#" class="underline-one">История предприятия</a>
+</div>
+<div class="menu">
+  <a href="#" class="underline-one">Фото</a>
+</div>
+<div class="menu">
+  <a href="#" class="underline-one">Контакты</a>
+</div>
+<div class="menu">
+  <a href="#" class="ybr" class="underline-one">О нас</a>
+</div>
+
+</div>
+</header>
+<br>
+
+<div>
+	<br>
+  
+</div>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="https://static.lada.ru/images/v6/promo/LADA__Selection.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="https://static.lada.ru/images_new/cars/about/granta/g_sed_top.jpg" style="width:100%" style="height: 110%" >
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="https://static.lada.ru/images/v6/service/benefit/servise-benefit_desktop.jpg" style="width:100%">
+  </div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+
+</div>
+</div>
+
+<main>
+<div>
+<section class="sticky"><p id="dover">
+АО «АвтоВА́З» — советская и российская автомобилестроительная компания. Крупнейший производитель легковых автомобилей в России (ранее — и в Восточной Европе[2][3]). Завод основан в 1966 году в городе Тольятти, где находятся штаб-квартира и основное производство. Входит в перечень системообразующих организаций России.
+
+</p>
+</main>
+<div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2369.914209961084!2d49.21991777070232!3d53.55929890235246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41687747c9826691%3A0xbd6a878083725991!2z0JDQstGC0L7QstCw0Lc!5e0!3m2!1sru!2sru!4v1665424545077!5m2!1sru!2sru" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+<div class="pog">
+ <a target="_blank" href="https://nochi.com/weather/togliatti-17610"><img src="https://w.bookcdn.com/weather/picture/13_17610_1_20_fff5d9_158_fff5d9_333333_08488D_3_fff5d9_333333_1_6.png?scode=2&domid=589&anc_id=14178"  alt="booked.net"/></a>
+</div>
+<h3 class="ysl1" style="color: #333" align="center">Услуги</h3>
+
+  <a class="ysl1" href="#"><img style="width: 100%" src="..\PRACTICA2\jpg\ysl.PNG"></a>
+
+
+
+
+
+
+
+
+
+
+<footer>
+<nav class="one-colummn-footer" >
+<img src="https://автолого.рф/wp-content/uploads/lada-big.png" width="450" class="logo-footer">
+</nav>
+<nav class="one-colummn-footer" >
+<a href="" class="footer-silk">Фото</a>
+<a href="booking.html" class="footer-silk">Регистрация на тест драйв</a>
+<a href="#sale" class="footer-silk">Акции</a>
+<a href="search.html" class="footer-silk">Поиск</a>
+<a  class="footer-silk"></a>
+</nav>
+<nav class="one-colummn-footer" >
+<a href="" class="footer-silk">Вк</a>
+<a href="" class="footer-silk">О нас</a>
+<a href="" class="footer-silk">Рассылка</a>
+<a  class="footer-silk">Телефон 8 (800) 100-10-10</a>
+<a href="index.html" class="footer-silk">Главная</a>
+</nav>
+</footer>
+
+
+
+
+
+<script src="..\PRACTICA2\js\app.js"></script>
+<script>
+	//Карусель
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}  // управление смены картинок при помощии кружков снизу карусели  
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3500); // скорость смены изображения сейчас оно равно=3.5сек
+}
+</script>
+</body>
+</html>

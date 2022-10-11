@@ -1,0 +1,33 @@
+body{
+	margin: 0;
+}
+.sveta{
+	border-radius: 0 10px 10px 0;
+	width: 300px;
+	background: #333;
+	color: #FFF;
+	position: fixed;
+	height: 110px;
+	top: 100px;
+	left: -320px;
+	border-right: 20px solid #fc0;
+	padding: 10px;
+	transition: left 5s;
+}
+.sveta img{
+	float: left;
+	margin: 0 10px 0 0;
+}
+.sveta::after{
+	content: 'Новое сообщение';
+	color: red;
+	position: absolute;
+	right: -70px;
+	bottom: 60px;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+
+}
+.sveta:hover{
+	left: 0;
+}
